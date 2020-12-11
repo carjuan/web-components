@@ -1,0 +1,46 @@
+.panels {
+  height: 80%;
+  width: 94%;
+  display: flex;
+  place-content: center;
+}
+
+.panels__panel {
+  background-size: auto 100%;
+  background-position: center;
+  background-repeat: no-repea;
+  margin-right: 2%;
+  color: #fff;
+  flex: 0.4;
+  cursor: pointer;
+  border-radius: 50px;
+  transition: flex 0.7s ease-in;
+  position: relative;
+}
+
+.panels__panel--active {
+  flex: 4;
+}
+
+.panels__heading {
+  position: absolute;
+  bottom: 10%;
+  left: 5%;
+  opacity: 0;
+  transition: opacity 0.2s ease-in 0.4s;
+}
+
+.panels__panel--active > .panels__heading {
+  opacity: 1;
+}
+
+@media (max-width: 480px) {
+  .panels {
+    width: 100%;
+  }
+
+  .panels__panel:nth-of-type(4),
+  .panels__panel:nth-of-type(5) {
+    display: none;
+  }
+}
