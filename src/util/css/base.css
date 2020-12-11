@@ -1,0 +1,34 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+/* Base app css */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+  line-height: 1.8;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+}
+
+ul[class],
+li[class] {
+  list-style: none;
+}
+
+a[class] {
+  text-decoration: none;
+}
